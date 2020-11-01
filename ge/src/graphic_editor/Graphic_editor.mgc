@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="graphic_editor.Main" x="680" y="67">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="graphic_editor.MainFrame"
+            endpointName="itsMainFrame" kind="Simple"/>
+        <Association destinationClassName="graphic_editor.CanvasPanel"
+            endpointName="canvasPanel" kind="Simple"/>
+    </Class>
+    <Class name="graphic_editor.ColorPanel" x="580" y="537">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="graphic_editor.MenuBar" x="340" y="197">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="graphic_editor.CanvasPanel"/>
+    </Class>
+    <Class name="graphic_editor.CanvasPanel" x="332" y="526">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="graphic_editor.Point"
+            endpointName="point" kind="Simple"/>
+        <Communication destinationClassName="graphic_editor.Point"/>
+    </Class>
+    <Class name="graphic_editor.MainFrame" x="660" y="221">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="graphic_editor.MenuBar"
+            endpointName="menuBar" kind="Simple"/>
+        <Association destinationClassName="graphic_editor.ColorPanel"
+            endpointName="colorPanel" kind="Simple"/>
+        <Association destinationClassName="graphic_editor.ButtonPanel"
+            endpointName="buttonPanel" kind="Simple"/>
+        <Association destinationClassName="graphic_editor.Point"
+            endpointName="point" kind="Simple"/>
+    </Class>
+    <Class name="graphic_editor.Point" x="907" y="193">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="graphic_editor.ButtonPanel" x="830" y="563">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
